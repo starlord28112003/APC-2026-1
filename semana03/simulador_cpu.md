@@ -1,3 +1,4 @@
+```asm
 INP
 STA A
 
@@ -28,3 +29,5 @@ B      DAT 0
 RES    DAT 0
 ONE    DAT 1
 ZERO   DAT 0
+```
+

@@ -1,16 +1,11 @@
 
 // VARIÁVEIS DO JOGO
 
-
-// pontuação do jogador
 var score = 0;
 
-// velocidade da bola 
 var speed = 2;
 
 
-
-// CRIAÇÃO DOS SPRITES
 
 
 
@@ -27,7 +22,6 @@ ball.setCollider("circle", 0, 0, 20);
 
 
 
-// FUNÇÕES DE BACKGROUND
 
 
 // fase 1 do jogo 
@@ -53,10 +47,8 @@ function drawWinBackground(){
 
 
 
-// FUNÇÃO DE SCORE (PLACAR)
+// FUNÇÃO DE SCORE 
 
-
-// mostra o score na tela
 function showScore(){
   fill("black");
   textSize(20);
@@ -65,10 +57,8 @@ function showScore(){
 
 
 
-// MOVIMENTO DOS SPRITES
 
-
-// controle do jogador com teclado
+// controle do jogador 
 function movePlayer(){
   if(keyDown("left")){
     bunny.x = bunny.x - 3;
@@ -78,17 +68,12 @@ function movePlayer(){
   }
 }
 
-// bola caindo automaticamente
+// bola caindo
 function moveBall(){
   ball.y = ball.y + speed;
 }
 
 
-
-// RESET DA BOLA
-
-
-// reposiciona a bola no topo da tela
 function resetBall(){
   ball.y = 50;
   ball.x = randomNumber(0, 400);
@@ -99,7 +84,6 @@ function resetBall(){
 // INTERAÇÕES DO JOGO
 
 
-// quando o coelho pega a bola
 function checkBallCatch(){
   if(bunny.isTouching(ball)){
     score = score + 1;   // aumenta score
@@ -108,7 +92,6 @@ function checkBallCatch(){
   }
 }
 
-// quando a bola cai fora da tela
 function checkBallMiss(){
   if(ball.y > 400){
     resetBall();
@@ -120,7 +103,7 @@ function checkBallMiss(){
 
 function draw() {
 
-  // escolha do cenário baseado no score
+  
   if(score < 5){
     drawSimpleBackground(); // fase inicial
   } 

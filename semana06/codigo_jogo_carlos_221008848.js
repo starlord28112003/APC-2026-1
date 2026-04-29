@@ -10,9 +10,9 @@ var speed = 2;
 
 
 var bunny = createSprite(200, 350);
-bunny.setAnimation("bunny1_ready_1"); // imagem inicial do coelho
+bunny.setAnimation("bunny1_ready_1"); 
 bunny.scale = 0.8; // tamanho do personagem
-bunny.setCollider("rectangle", 0, 0, 50, 60); // área de colisão
+bunny.setCollider("rectangle", 0, 0, 50, 60);
 
 // objeto que cai (bola de sinuca)
 var ball = createSprite(200, 50);
@@ -86,9 +86,9 @@ function resetBall(){
 
 function checkBallCatch(){
   if(bunny.isTouching(ball)){
-    score = score + 1;   // aumenta score
-    speed = speed + 0.2;  // deixa o jogo mais difícil
-    resetBall();          // respawna bola
+    score = score + 1;   
+    speed = speed + 0.2;  
+    resetBall();          
   }
 }
 
@@ -105,13 +105,13 @@ function draw() {
 
   
   if(score < 5){
-    drawSimpleBackground(); // fase inicial
+    drawSimpleBackground(); 
   } 
   else if(score < 10){
-    drawMidBackground(); // fase intermediária
+    drawMidBackground(); 
   } 
   else {
-    drawWinBackground(); // vitória
+    drawWinBackground(); 
   }
 
 

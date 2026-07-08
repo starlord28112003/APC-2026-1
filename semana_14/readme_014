@@ -1,1 +1,12 @@
-.
+
+Depois de criar a estrutura visual da interface, passei a estudar como fazer com que os elementos respondam às ações do usuário. Uma interface não serve apenas para mostrar informações: ela precisa permitir escolhas, executar funções e atualizar os resultados exibidos.
+Um dos componentes estudados foi o `Combobox`, disponível no módulo `ttk`. Ele funciona como uma caixa de seleção e permite que o usuário escolha uma opção dentro de uma lista. Esse recurso pode ser usado para selecionar categorias, regiões, períodos ou qualquer outro filtro. O valor escolhido pode ser obtido com a função `.get()`.
+Também aprendi a associar botões a funções usando o parâmetro `command`. Quando um botão recebe uma função no comando, essa função é executada ao clicar nele. Por exemplo, um botão pode chamar uma função para atualizar os dados, limpar filtros, gerar gráficos ou exportar um relatório.
+Além dos botões, estudei os eventos. Um evento acontece quando o usuário realiza uma ação, como selecionar uma nova opção em uma caixa de seleção. O comando `bind()` permite associar um evento a uma função. Dessa forma, quando o usuário altera uma escolha, a tela pode ser atualizada automaticamente.
+Outro aprendizado importante foi a integração entre Tkinter e Matplotlib. Os gráficos criados com Matplotlib podem ser inseridos dentro da janela usando `FigureCanvasTkAgg`. Primeiro é criada uma figura com `Figure()`, depois um eixo com `add_subplot()`, e por fim o gráfico é colocado na interface. Para atualizar o gráfico, pode-se limpar o eixo com `clear()`, desenhar os novos dados e chamar `draw()`.
+Também estudei a criação de áreas de texto com o componente `Text`. Esse componente pode ser usado para mostrar rankings, observações, relatórios ou resultados detalhados. Funções como `delete()` removem o texto anterior, enquanto `insert()` adiciona novas informações.
+Por fim, aprendi a criar relatórios e exportar arquivos. O módulo `filedialog` permite abrir uma janela para o usuário escolher onde salvar um arquivo. A função `asksaveasfilename()` retorna o caminho escolhido. Depois disso, os dados podem ser exportados para CSV com `to_csv()` ou escritos em um arquivo TXT usando `open()` e `write()`.
+As mensagens de confirmação e erro podem ser exibidas com `messagebox.showinfo()` e `messagebox.showerror()`. Essas mensagens tornam a interface mais clara, pois informam ao usuário se uma ação foi concluída corretamente ou se ocorreu algum problema.
+Os principais aprendizados desta etapa foram interação com o usuário, caixas de seleção, botões com comandos, eventos, atualização automática de informações, inserção de gráficos na janela, exibição de textos, exportação de relatórios e mensagens de sucesso ou erro.
+
+

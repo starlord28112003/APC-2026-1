@@ -1,4 +1,8 @@
-O Q EU APRENDI 
-
+Nesta etapa, aprofundei o estudo dos comandos básicos da linguagem C. Aprendi como criar programas que realizam cálculos, recebem informações do usuário e tomam decisões de acordo com os valores digitados.
+Um dos principais conteúdos foi o uso de operadores. Os operadores aritméticos permitem realizar cálculos, como adição com +, subtração com -, multiplicação com *, divisão com / e resto da divisão com %. Também estudei operadores relacionais, como >, <, >=, <=, == e !=, que permitem comparar valores. Esses operadores são importantes para verificar condições dentro de um programa.
+Outro aprendizado importante foi o uso das estruturas de decisão. O comando if permite executar uma parte do código apenas quando uma condição é verdadeira. O comando else permite definir o que acontece quando a condição é falsa. Também aprendi a usar else if para testar várias condições diferentes e switch para criar escolhas com várias opções.
+Além das decisões, estudei estruturas de repetição. Os laços de repetição permitem executar um bloco de código várias vezes. O for é usado quando já se sabe quantas vezes a repetição deve acontecer. O while repete enquanto uma condição for verdadeira. Já o do...while executa o código pelo menos uma vez e depois verifica a condição.
+Esses comandos permitem criar programas mais completos. Por exemplo, é possível criar um programa que leia várias notas, calcule uma média, informe se o aluno foi aprovado ou reprovado e repita o processo para diferentes alunos.
+Também aprendi sobre a importância de usar chaves { } para organizar blocos de código, ponto e vírgula ; para finalizar comandos e indentação para deixar o programa mais fácil de ler. Os principais aprendizados desta etapa foram operadores, comparações, decisões com if e else, escolhas com switch, repetições com for, while e do...while, além de organização e lógica de programação.
 
 
